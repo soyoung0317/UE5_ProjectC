@@ -7,6 +7,8 @@
 
 void UCharacterAnimInstance::NativeInitializeAnimation()
 {
+	Super::NativeInitializeAnimation(); // EMPTY FUNC 
+
 	OwningCharacter = Cast<ABaseCharacter>(TryGetPawnOwner());
 
 	if (OwningCharacter)
@@ -17,6 +19,8 @@ void UCharacterAnimInstance::NativeInitializeAnimation()
 
 void UCharacterAnimInstance::NativeThreadSafeUpdateAnimation(float DeltaSeconds)
 {
+	Super::NativeThreadSafeUpdateAnimation(DeltaSeconds);
+
 	if (!OwningCharacter || !OwningMovementComponent)
 		return;
 
