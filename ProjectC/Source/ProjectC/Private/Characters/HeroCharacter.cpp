@@ -64,7 +64,7 @@ void AHeroCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 
-	Debug::Print(TEXT("Working"));
+	Debug::Print(TEXT("Debug Working"));
 }
 
 void AHeroCharacter::Input_Move(const FInputActionValue& InputActionValue)

@@ -30,7 +30,7 @@ public:
 	FGameplayTag InputTag;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	UInputAction* InputAction;
+	UInputAction* InputAction = nullptr;
 
 };
 /**
