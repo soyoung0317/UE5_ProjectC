@@ -15,7 +15,8 @@ public class ProjectC : ModuleRules
 			"Engine", 
 			"InputCore", 
 			"EnhancedInput",
-            "GameplayTags" // 추가
+            "GameplayTags", // 추가
+			"EnhancedInput" // 추가
         });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
